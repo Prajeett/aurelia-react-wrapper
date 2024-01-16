@@ -40,7 +40,7 @@
 
 ## 7. Import the wrapper and register in your main or index file
 >     Example:    import { ReactWrapper } from './react-wrapper';
->            Aurelia
+           Aurelia
             .register(ReactWrapper) 
             .app(MyApp)
             .start();
