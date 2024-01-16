@@ -38,7 +38,7 @@
 
 6. Create a wrapper and render the react component in the aurelia view. 
 
-7. Import the wrapper and register you wrapper in you main or index file
+7. Import the wrapper and register in your main or index file
 Example:    import { ReactWrapper } from './react-wrapper';
             Aurelia
             .register(ReactWrapper) 
