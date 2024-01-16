@@ -7,20 +7,20 @@
 
 ## Steps involved:
 
-1. Created aurelia app
+## 1. Created aurelia app
    npx makes aurelia
 
-2. Installed Dependencies (need babel 7+)
+## 2. Installed Dependencies (need babel 7+)
    npm install react react-dom
    npm install --save-dev @types/react @types/react-dom
    npm install @babel/preset-env @babel/preset-react --save-dev
 
-3. Add extensions in modules.export  
+## 3. Add extensions in modules.export  
    resolve: {
    extensions: ['.js', '.jsx', '.ts', '.tsx',]
    }
 
-4. Add rules in module
+## 4. Add rules in module
       {
           test: /\.(js|jsx)$/,
           exclude: /node_modules/,
@@ -32,13 +32,13 @@
           }
         }
 
-5.  In Config file/compilerOptions
+## 5.  In Config file/compilerOptions
     "jsx": "react"
 
 
-6. Create a wrapper and render the react component in the aurelia view. 
+## 6. Create a wrapper and render the react component in the aurelia view. 
 
-7. Import the wrapper and register you wrapper in you main or index file
+## 7. Import the wrapper and register you wrapper in you main or index file
 Example:    import { ReactWrapper } from './react-wrapper';
             Aurelia
             .register(ReactWrapper) 
